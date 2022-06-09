@@ -31,7 +31,8 @@ function addGridListeners(){
     const gridDivs = document.querySelectorAll(".cols");
     gridDivs.forEach(gridDiv => {
         gridDiv.addEventListener("mouseover", () => {
-        gridDiv.style.background = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+        // gridDiv.style.background = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+        gridDiv.style.background = "black";
         })
     })
 }
