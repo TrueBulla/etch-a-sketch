@@ -22,10 +22,22 @@ body{
     border: 1px solid red;
     border-radius: 30px;
 }
-.main-container__content h1 {
+.main-container__content--overGrid h1 {
     color: white;
     padding-top: 10px;
+}
+.main-container__content--overGrid {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     font-family: Pacifico;
+}
+.main-container__content--overGrid button {
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .grid-container{
     display: flex;
@@ -33,17 +45,11 @@ body{
     align-items: center;
     margin: 10px 100px;
     background: white;
-    border-radius: 30px;
-    border: 3px solid blue;
     width: 650px;
     height: 500px;
-    
 }
 .cols {
-    display: flex;
-    width: 15px;
-    height: 15px;
-    border: 1px solid red;
+    display: flex;    
 }
 .circles{
     display: flex;
