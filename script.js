@@ -26,9 +26,11 @@ function createGrid(){
     addGridListeners();
 }
 createGrid();
-
+//This function adds the event listeners to each square on the grid so they can change color after the mouse moves over them 
 function addGridListeners(){
+    //create a nodelist of all grid tiles
     const gridDivs = document.querySelectorAll(".cols");
+    //adds the event listener to each tile and changes their background when the mouse moves over that tile
     gridDivs.forEach(gridDiv => {
         gridDiv.addEventListener("mouseover", () => {
         // gridDiv.style.background = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
@@ -36,14 +38,14 @@ function addGridListeners(){
         })
     })
 }
-
+//This function will reset the grid to all white spaces
 function clearGrid(){
     const gridDivs = document.querySelectorAll(".cols");
     gridDivs.forEach(gridDiv => {
         gridDiv.style.background = "none";
     })
 }
-
+//This function removes the grid and then offers to recreate the grid with a different number of rows/columns
 function resetGrid(){
     const rowDivs = document.querySelectorAll('.row')
     rowDivs.forEach(rowDiv => {
